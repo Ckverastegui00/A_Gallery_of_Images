@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-
+   <title>A Gallery of Images</title>
+    
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,23 +17,21 @@
     <script src="script.A Gallery of Images.js"></script>
     
     
-    <title>A Gallery of Images</title>
-    
     
 <style>
 
 img {
     display: block;
     margin: 0 auto;
-}
-
+    
 </style>
     
+
 </head>
 
 <body>
     
-   <div id= "h1">A Gallery of Images </div>
+   <div id= "h1">San Francisco</div>
     
     
     <div id= "p"> By <strong>David & Erick</strong>! </div> 
@@ -41,27 +40,49 @@ img {
         <div class="slideshow-container">
             
             <div class="mySlides fade">
-                <img src="Images/bay.jpeg" style="width:80%" border= "5">
+                <img src="Images/bay.jpeg" style="width:80%">
 
 
                 
             </div>
 
             <div class="mySlides fade">
-                <img src="Images/City.jpg" style="width:80%" border= "5">
+                <img src="Images/City.jpg" style="width:80%">
 
             </div>
 
             <div class="mySlides fade">
-                <img src="img3.jpg" style="width:100%">
-  
+                <img src="Images/Road.jpg" style="width:80%">
+
 
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
-        </div>
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+            
+            
+            
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            
+
 
     
     
@@ -73,5 +94,3 @@ img {
 
 
 </html>
-
-
