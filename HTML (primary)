@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link rel="stylesheet" type="text/css" href="A Gallery of Images.css">
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+          
+    <script src="script.A Gallery of Images.js"></script>
+    
+    
+    <title>A Gallery of Images</title>
+    
+    
+<style>
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+</style>
+    
+</head>
+
+<body>
+    
+   <div id= "h1">A Gallery of Images </div>
+    
+    
+    <div id= "p"> By <strong>David & Erick</strong>! </div> 
+    
+        
+        <div class="slideshow-container">
+            
+            <div class="mySlides fade">
+                <img src="Images/bay.jpeg" style="width:80%" border= "5">
+
+
+                
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/City.jpg" style="width:80%" border= "5">
+
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img3.jpg" style="width:100%">
+  
+
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+    
+    
+        <br>
+  
+
+    
+</body>
+
+
+</html>
+
+
