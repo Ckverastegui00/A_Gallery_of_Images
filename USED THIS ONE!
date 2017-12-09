@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Gallery of Images</title>
+     <link rel="stylesheet" type="text/css" href="A_Gallery_of_Images.css">
+    
+    <meta charset="utf-8">
+    <meta name="description" content="Dynamic Gallery">
+	<meta name="Author" content="Erick & David">
+
+    
+    <script
+  src="jquery-3.2.1.js"></script>
+    
+    
+          
+    <script type="text/javascript" src="A_Gallery_of_Images.js"></script>
+    
+</head>
+
+<body>
+    
+    <div id= "h1">San Francisco</div>
+    
+    
+    <div id= "p"> By <strong>David & Erick</strong>! </div> 
+    
+         
+            
+            <button id="showdiv" >Show Box</button>
+            
+            <div id="mainbox"> </div>
+     
+            <div id= "lightbox"> </div>
+            
+
+
+    
+</body>
